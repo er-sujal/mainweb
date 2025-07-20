@@ -1,0 +1,30 @@
+D:\finalstudio\Main website\bin\Debug\net8.0\appsettings.Development.json
+D:\finalstudio\Main website\bin\Debug\net8.0\appsettings.json
+D:\finalstudio\Main website\bin\Debug\net8.0\Main website.staticwebassets.runtime.json
+D:\finalstudio\Main website\bin\Debug\net8.0\Main website.exe
+D:\finalstudio\Main website\bin\Debug\net8.0\Main website.deps.json
+D:\finalstudio\Main website\bin\Debug\net8.0\Main website.runtimeconfig.json
+D:\finalstudio\Main website\bin\Debug\net8.0\Main website.dll
+D:\finalstudio\Main website\bin\Debug\net8.0\Main website.pdb
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.GeneratedMSBuildEditorConfig.editorconfig
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.AssemblyInfoInputs.cache
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.AssemblyInfo.cs
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.csproj.CoreCompileInputs.cache
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.MvcApplicationPartsAssemblyInfo.cache
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.RazorAssemblyInfo.cache
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.RazorAssemblyInfo.cs
+D:\finalstudio\Main website\obj\Debug\net8.0\staticwebassets.build.json
+D:\finalstudio\Main website\obj\Debug\net8.0\staticwebassets.development.json
+D:\finalstudio\Main website\obj\Debug\net8.0\staticwebassets\msbuild.Main website.Microsoft.AspNetCore.StaticWebAssets.props
+D:\finalstudio\Main website\obj\Debug\net8.0\staticwebassets\msbuild.build.Main website.props
+D:\finalstudio\Main website\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Main website.props
+D:\finalstudio\Main website\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Main website.props
+D:\finalstudio\Main website\obj\Debug\net8.0\staticwebassets.pack.json
+D:\finalstudio\Main website\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\finalstudio\Main website\obj\Debug\net8.0\scopedcss\bundle\Main website.styles.css
+D:\finalstudio\Main website\obj\Debug\net8.0\scopedcss\projectbundle\Main website.bundle.scp.css
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.dll
+D:\finalstudio\Main website\obj\Debug\net8.0\refint\Main website.dll
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.pdb
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.genruntimeconfig.cache
+D:\finalstudio\Main website\obj\Debug\net8.0\ref\Main website.dll

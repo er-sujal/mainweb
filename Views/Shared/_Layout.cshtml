@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Studio44 Portfolio</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="~/images/logo.png" alt="Studio44 Logo" class="logo-img" />
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#workflow" class="nav-link">Workflow</a>
+            </nav>
+            <div class="header-contact">
+                <span>studio44v@gmail.com</span>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        @RenderBody()
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h2>Get in Touch with Us</h2>
+                <div class="footer-phone">+91 97370 44144</div>
+                <div class="footer-email">studio44v@gmail.com</div>
+            </div>
+            <nav class="footer-nav">
+                <a href="#home" class="footer-link">HOME</a>
+                <a href="#portfolio" class="footer-link">PORTFOLIO</a>
+                <a href="#about" class="footer-link">ABOUT</a>
+                <a href="#workflow" class="footer-link">WORKFLOW</a>
+            </nav>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2025 - Studio 44
+        </div>
+        <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
+
