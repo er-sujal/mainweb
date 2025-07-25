@@ -3,16 +3,177 @@
 }
 
 <section id="hero" class="hero-section">
-    <div class="hero-bg">
-        <img src="/images/hero-bg.jpg" alt="Studio44 Visualization" class="hero-img" />
-    </div>
+    <div class="hero-bg"></div>
+    <div class="hero-bg-overlay"></div>
     <div class="hero-overlay">
-        <div class="hero-logo">
-            <span class="logo-main">studio</span><span class="logo-accent">44</span>
-            <div class="logo-sub">VISUALIZATION</div>
-        </div>
+        <img src="/images/logo.webp" alt="Studio44 Visualization" class="hero-img" />
         <h2 class="hero-title">Concept. Craft. Captivate.</h2>
     </div>
 </section>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.portfolio-filter');
+    const portfolioGallery = document.querySelector('.portfolio-gallery');
+    const columnsCount = 4;
+    // Get all images and their categories
+    function getAllImages() {
+        const items = [];
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            const img = item.querySelector('img');
+            items.push({
+                element: item,
+                src: img.getAttribute('src'),
+                category: item.getAttribute('data-category') || '',
+                html: item.outerHTML
+            });
+        });
+        return items;
+    }
+    // Redistribute images into columns
+    function renderColumns(filteredImages) {
+        // Remove old columns
+        const columnsWrapper = portfolioGallery.querySelector('.portfolio-columns');
+        if (columnsWrapper) columnsWrapper.remove();
+        // Create new columns
+        const newColumnsWrapper = document.createElement('div');
+        newColumnsWrapper.className = 'portfolio-columns';
+        // Prepare columns arrays
+        const columns = Array.from({ length: columnsCount }, () => []);
+        // Distribute images round-robin
+        filteredImages.forEach((img, idx) => {
+            columns[idx % columnsCount].push(img);
+        });
+        // Build columns
+        columns.forEach(colImgs => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'portfolio-column';
+            colImgs.forEach(imgObj => {
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = imgObj.html;
+                colDiv.appendChild(tempDiv.firstElementChild);
+            });
+            newColumnsWrapper.appendChild(colDiv);
+        });
+        portfolioGallery.appendChild(newColumnsWrapper);
+    }
+    // Initial images
+    const allImages = getAllImages();
+    // Initial render (already rendered by Razor)
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const filter = this.getAttribute('data-filter');
+            let filtered = allImages;
+            if (filter !== 'all') {
+                filtered = allImages.filter(img => img.src.toUpperCase().includes(filter));
+            }
+            renderColumns(filtered);
+        });
+    });
+});
+</script>
+<section class="main-content-section">
+    <div class="content-block">
+        <h2 class="content-title">3D Visualization by Studio 44</h2>
+        <hr class="content-divider" />
+        <p class="content-desc">We bring your ideas to life with high-quality <strong>interior, exterior, and product visualizations</strong>. Whether you’re an architect, designer, or business owner, our 3D visuals help you showcase your vision with clarity and precision.</p>
+    </div>
+    <div class="content-block">
+        <h2 class="content-title">Our Story</h2>
+        <hr class="content-divider" />
+        <p class="content-desc">At <strong>Studio 44 Visualization</strong>, we believe that great design deserves great visualization. Our journey began with a passion for technology and architecture. As a civil engineer fascinated by computers, our founder discovered the world of 3D visualization—a perfect blend of creativity and precision. What started as an exploration turned into a full-fledged business, and for the past <strong>seven years</strong>, we have been bringing architectural visions to life.</p>
+    </div>
+    <div class="content-block">
+        <h2 class="content-title">Why Choose Us?</h2>
+        <hr class="content-divider" />
+        <ul class="content-list">
+            <li><strong>Fast &amp; Reliable:</strong> We pride ourselves on our <strong>quick turnaround times</strong> without compromising quality.</li>
+            <li><strong>Collaboration First:</strong> We work as an <strong>extension of your team</strong>, ensuring a seamless workflow from concept to final render.</li>
+            <li><strong>No Fear of Changes:</strong> Unlike many in the industry, we welcome revisions—no matter how many. Your project evolves with your vision.</li>
+            <li><strong>Long-Term Support:</strong> Every project comes with <strong>one year of post-start support</strong> to ensure your satisfaction.</li>
+            <li>From <strong>residential and commercial spaces</strong> to <strong>luxury interiors, promotional sets, and jewelry rendering</strong>, we create visuals that captivate and inspire. Let’s bring your ideas to life—exactly the way you imagine them.</li>
+        </ul>
+    </div>
+    <div class="content-block">
+        <h2 class="content-title">Explore Our Exceptional 3D Rendering Portfolio</h2>
+        <hr class="content-divider" />
+        <!-- Portfolio Gallery Section Start -->
+        <div class="portfolio-section">
+            <div class="portfolio-filters">
+                <button class="portfolio-filter active" data-filter="all">All</button>
+                <button class="portfolio-filter" data-filter="INTERIOR">INTERIOR</button>
+                <button class="portfolio-filter" data-filter="EXTERIOR">EXTERIOR</button>
+                <button class="portfolio-filter" data-filter="OFFICE">OFFICE / WORKSPACE</button>
+                <button class="portfolio-filter" data-filter="LIVING">LIVING ROOM</button>
+                <button class="portfolio-filter" data-filter="BEDROOM">BEDROOM</button>
+                <button class="portfolio-filter" data-filter="KITCHEN">KITCHEN</button>
+                <button class="portfolio-filter" data-filter="DINING">DINING ROOM</button>
+                <button class="portfolio-filter" data-filter="POOJA">POOJA ROOM</button>
+                <button class="portfolio-filter" data-filter="FOYER">FOYER</button>
+                <button class="portfolio-filter" data-filter="BATHROOM">BATHROOM</button>
+            </div>
+            <hr class="content-divider" />
+            <div class="portfolio-gallery">
+                @{
+                    var imageFolder = "images/portfolio";
+                    var serverPath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "wwwroot", imageFolder);
+                    var images = System.IO.Directory.Exists(serverPath) ? System.IO.Directory.GetFiles(serverPath)
+                        .Select(f => System.IO.Path.GetFileName(f)).ToList() : new List<string>();
+                    var columns = 4;
+                    var imagesPerColumn = (int)Math.Ceiling(images.Count / (double)columns);
+                }
+                <div class="portfolio-columns">
+                    @for (int col = 0; col < columns; col++)
+                    {
+                        <div class="portfolio-column">
+                            @for (int i = col * imagesPerColumn; i < Math.Min((col + 1) * imagesPerColumn, images.Count); i++)
+                            {
+                                var img = images[i];
+                                <div class="portfolio-item" data-category="@img.ToUpper()">
+                                    <img src="/@imageFolder/@img" alt="Portfolio Image" class="portfolio-img" />
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Gallery Section End -->
+    </div>
 
+    <!-- Studio44 Stats & CTA Start -->
+    <div class="studio44-stats-section">
+        <div class="studio44-stats-row">
+            <div class="studio44-stat-block">
+                <div class="studio44-stat-number">6800+</div>
+                <div class="studio44-stat-label">HOURS</div>
+            </div>
+            <div class="studio44-stat-block">
+                <div class="studio44-stat-number">120+</div>
+                <div class="studio44-stat-label">RENDER THREADS</div>
+            </div>
+            <div class="studio44-stat-block">
+                <div class="studio44-stat-number">5000+</div>
+                <div class="studio44-stat-label">RENDERINGS</div>
+            </div>
+        </div>
+        <div class="studio44-cta-row">
+            <div class="studio44-cta-left">
+                <div class="studio44-cta-title">CHOOSE STUDIO44</div>
+                <div class="studio44-cta-heading">
+                    <span>LET’S WORK</span>
+                    <br>
+                    <span style="display:inline-block; margin-top:18px;">TOGETHER</span>
+                </div>
+            </div>
+            <div class="studio44-cta-right">
+                <p class="studio44-cta-desc">
+                    By entrusting Studio44 with your 3D rendering needs, you can allocate your time and resources to your core competencies. Our 3D rendering firm eliminates the hassle of managing supplementary resources and reduces overhead costs associated with software, hardware, and personnel that fall outside your primary business focus. Our team of skilled 3D artists possesses years of specialized expertise, research, and development, and is readily accessible with just a few clicks, ensuring that you receive quality service and support.
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- Studio44 Stats & CTA End -->
+</section>

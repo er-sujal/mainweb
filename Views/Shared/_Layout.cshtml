@@ -12,7 +12,9 @@
     <header class="main-header">
         <div class="header-content">
             <div class="logo">
-                <img src="~/images/logo.png" alt="Studio44 Logo" class="logo-img" />
+                <a href="/">
+                    <img src="~/images/logo.webp" alt="Studio44 Logo" class="logo-img" />
+                </a>
             </div>
             <nav class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
@@ -49,6 +51,17 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('.main-header');
+            var headerContent = document.querySelector('.main-header .header-content');
+            if (window.scrollY > 60) {
+                header.classList.add('transparent');
+            } else {
+                header.classList.remove('transparent');
+            }
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
