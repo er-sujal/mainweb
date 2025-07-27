@@ -28,3 +28,4 @@ D:\finalstudio\Main website\obj\Debug\net8.0\refint\Main website.dll
 D:\finalstudio\Main website\obj\Debug\net8.0\Main website.pdb
 D:\finalstudio\Main website\obj\Debug\net8.0\Main website.genruntimeconfig.cache
 D:\finalstudio\Main website\obj\Debug\net8.0\ref\Main website.dll
+D:\finalstudio\Main website\obj\Debug\net8.0\Main website.sourcelink.json

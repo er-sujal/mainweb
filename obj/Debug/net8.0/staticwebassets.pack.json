@@ -13,6 +13,90 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\Hero-Image.jpg",
+      "PackagePath": "staticwebassets\\images\\Hero-Image.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\close.png",
+      "PackagePath": "staticwebassets\\images\\close.png"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\images\\loading.gif"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\logo.webp",
+      "PackagePath": "staticwebassets\\images\\logo.webp"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\next.png",
+      "PackagePath": "staticwebassets\\images\\next.png"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\0.618-Saffrom-Living-Room-2.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\0.618-Saffrom-Living-Room-2.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\0.618-Saffrom-Living-Room-3.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\0.618-Saffrom-Living-Room-3.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\ARK-D1-Parents-Walkin-Wardrobe-1.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\ARK-D1-Parents-Walkin-Wardrobe-1.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\ARK-D1-Walkin-Wardrobe-2.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\ARK-D1-Walkin-Wardrobe-2.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\Aikyam-Capital-Advisors-Workstation-2.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\Aikyam-Capital-Advisors-Workstation-2.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\Bharat-Office-MDs-Cabin.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\Bharat-Office-MDs-Cabin.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\Exhibit-Office-Reception-2.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\Exhibit-Office-Reception-2.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\FSO-Sangini-Evoq-Bedroom-02.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\FSO-Sangini-Evoq-Bedroom-02.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\FSO-Vrindavan-Bunglows-Bhanubhai-Toilet-1.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\FSO-Vrindavan-Bunglows-Bhanubhai-Toilet-1.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\Neel-Doshi-Sankit-Shah-Dining-Room-1.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\Neel-Doshi-Sankit-Shah-Dining-Room-1.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\Orient-Office-Workstation-2.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\Orient-Office-Workstation-2.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\SV-Architects-Gopin-Master-Bedroom-01.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\SV-Architects-Gopin-Master-Bedroom-01.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\SV-Architects-Hasubhai.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\SV-Architects-Hasubhai.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\Vikram-Tea-Workstation-4.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\Vikram-Tea-Workstation-4.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\portfolio\\Vrindavan-Bunglows-Dining-Area.jpg",
+      "PackagePath": "staticwebassets\\images\\portfolio\\Vrindavan-Bunglows-Dining-Area.jpg"
+    },
+    {
+      "Id": "D:\\finalstudio\\Main website\\wwwroot\\images\\prev.png",
+      "PackagePath": "staticwebassets\\images\\prev.png"
+    },
+    {
       "Id": "D:\\finalstudio\\Main website\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
