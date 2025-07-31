@@ -129,23 +129,27 @@ document.addEventListener('DOMContentLoaded', function () {
                         imagine them.</li>
                 </ul>
             </div>
-            <div class="content-block">
-                <h2 class="content-title">Explore Our Exceptional 3D Rendering Portfolio</h2>
-                <hr class="portfolio-content-divider" />
+            <div class="portfolio-home-section">
+                <div class="portfolio-home-header">
+                    <h2 class="portfolio-home-title">Explore Our Exceptional 3D Rendering Portfolio</h2>
+                    <p class="portfolio-home-desc">From residential and commercial spaces to luxury interiors and architectural visualizations, discover our diverse collection of photorealistic renderings that showcase the power of professional 3D visualization.</p>
+                    <hr class="content-divider" />
+                </div>
+                <div class="portfolio-filters-home">
+                    <button class="portfolio-filter active" data-filter="all">All</button>
+                    <button class="portfolio-filter" data-filter="INTERIOR">INTERIOR</button>
+                    <button class="portfolio-filter" data-filter="EXTERIOR">EXTERIOR</button>
+                    <button class="portfolio-filter" data-filter="OFFICE">OFFICE / WORKSPACE</button>
+                    <button class="portfolio-filter" data-filter="LIVING">LIVING ROOM</button>
+                    <button class="portfolio-filter" data-filter="BEDROOM">BEDROOM</button>
+                    <button class="portfolio-filter" data-filter="KITCHEN">KITCHEN</button>
+                    <button class="portfolio-filter" data-filter="DINING">DINING ROOM</button>
+                    <button class="portfolio-filter" data-filter="POOJA">POOJA ROOM</button>
+                    <button class="portfolio-filter" data-filter="FOYER">FOYER</button>
+                    <button class="portfolio-filter" data-filter="BATHROOM">BATHROOM</button>
+                </div>
+                <div class="content-block">
                     <div class="portfolio-section">
-                        <div class="portfolio-filters"><button class="portfolio-filter active"
-                                data-filter="all">All</button><button class="portfolio-filter"
-                                data-filter="INTERIOR">INTERIOR</button><button class="portfolio-filter"
-                                data-filter="EXTERIOR">EXTERIOR</button><button class="portfolio-filter"
-                                data-filter="OFFICE">OFFICE / WORKSPACE</button><button class="portfolio-filter"
-                                data-filter="LIVING">LIVING ROOM</button><button class="portfolio-filter"
-                                data-filter="BEDROOM">BEDROOM</button><button class="portfolio-filter"
-                                data-filter="KITCHEN">KITCHEN</button><button class="portfolio-filter"
-                                data-filter="DINING">DINING ROOM</button><button class="portfolio-filter"
-                                data-filter="POOJA">POOJA ROOM</button><button class="portfolio-filter"
-                                data-filter="FOYER">FOYER</button><button class="portfolio-filter"
-                                data-filter="BATHROOM">BATHROOM</button></div>
-                        <hr class="content-divider" />
                         <div class="portfolio-gallery">@{
                             var imageFolder = "images/portfolio";
                             var serverPath = System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(),
@@ -173,6 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
                 <div class="studio44-stats-section">
                     <div class="studio44-stats-row">
@@ -210,10 +215,23 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
     </div>
 
 <div id="portfolio-section" class="spa-section" style="display: none;">
+    <!-- Portfolio Header -->
+    <div class="portfolio-header">
+        <h1 class="portfolio-title">Our 3D Rendering Portfolio</h1>
+        <p class="portfolio-lead">Discover our exceptional collection of interior, exterior, and architectural visualizations that bring dreams to life with stunning photorealistic quality.</p>
+    </div>
+    
+    <!-- Portfolio Filters -->
+    <div class="portfolio-filters-section">
+        <div class="portfolio-filters">
+        </div>
+    </div>
+    
     <div class="portfolio-section" style="width:100vw; padding:0; margin:0;">
         <div class="portfolio-gallery" style="width:100vw; margin:0;">
             @{

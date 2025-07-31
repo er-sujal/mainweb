@@ -529,6 +529,138 @@
   }
 }
 
+/* Portfolio Header Styles */
+.portfolio-header {
+  background: #7a5a32;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.portfolio-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-top: 0;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.portfolio-lead {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.portfolio-filters-section {
+  background: #2a2a2a;
+  padding: 40px 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .portfolio-header {
+    padding: 40px 20px;
+  }
+  
+  .portfolio-title {
+    font-size: 2.2rem;
+  }
+  
+  .portfolio-lead {
+    font-size: 1.1rem;
+    padding: 0 20px;
+  }
+  
+  .portfolio-filters-section {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-title {
+    font-size: 1.8rem;
+  }
+  
+  .portfolio-lead {
+    font-size: 1rem;
+  }
+}
+
+/* Portfolio Home Section Styles */
+.portfolio-home-section {
+  background: #262626;
+  padding: 60px 20px 40px 20px;
+  margin: 40px 0 0 0;
+}
+
+.portfolio-home-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-home-title {
+  color: #b98a4a;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.portfolio-home-desc {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+
+.portfolio-filters-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-home-section {
+    padding: 40px 15px 30px 15px;
+  }
+  
+  .portfolio-home-title {
+    font-size: 2rem;
+  }
+  
+  .portfolio-home-desc {
+    font-size: 1rem;
+  }
+  
+  .portfolio-home-header {
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-filters-home {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-home-title {
+    font-size: 1.6rem;
+  }
+  
+  .portfolio-home-desc {
+    font-size: 0.95rem;
+  }
+}
+
 #portfolio-section .portfolio-section {
   width: 100vw;
   margin: 0;
